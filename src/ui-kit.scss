@@ -1,0 +1,23 @@
+$root-font-size: 16;
+
+$white: #b7aea5;
+$orange: #f77016;
+$dark-orange: #e33c08;
+$dark-gray: #433d3d;
+$black: #221d21;
+
+$media-screen-xs: "479.99px";
+$media-screen-sm: "767.99px";
+$media-screen-md: "1059.99px";
+
+@function rem($px) {
+  @return ($px / $root-font-size) + rem;
+}
+
+@function em($px) {
+  @return ($px / $root-font-size) + em;
+}
+
+@function percent($size-text, $line-height) {
+  @return $line-height / $size-text * 100%;
+}
