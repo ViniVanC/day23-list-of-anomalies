@@ -10,12 +10,18 @@
   box-sizing: border-box;
 }
 
+h2 {
+  // color: $light-pink;
+}
+
 // ===================================================================
 // ids
 
 #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: $root-font-size + px;
+  color: $white;
+  background-color: $black;
 
   min-height: 100vh;
   display: flex;
