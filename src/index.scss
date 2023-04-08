@@ -1,3 +1,37 @@
-:root {
+@import "ui-kit";
+
+// ===================================================================
+// tags
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+// ===================================================================
+// ids
+
+#root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: $root-font-size + px;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  > main {
+    flex: 1 1 auto;
+  }
+}
+
+// ===================================================================
+// classes
+
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 rem(15);
 }
