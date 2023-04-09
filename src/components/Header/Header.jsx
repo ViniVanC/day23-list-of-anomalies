@@ -11,6 +11,7 @@ export const Header = () => {
         <div className="header__inner">
           <Logo />
           <List
+            className={"navbar"}
             itemsList={[
               {
                 title: "home",

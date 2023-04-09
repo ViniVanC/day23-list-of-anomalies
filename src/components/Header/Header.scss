@@ -16,3 +16,26 @@
     justify-content: space-between;
   }
 }
+
+.navbar {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:first-child),
+    &:not(:last-child) {
+      margin: 0;
+    }
+
+    font-size: 20px;
+    font-weight: 700;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
