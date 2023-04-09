@@ -20,6 +20,10 @@ export const PagesList = () => {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
+            <button className="xMark" onClick={() => setSearch("")}>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
         <ul className="pages-list__list">

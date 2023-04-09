@@ -18,6 +18,18 @@
 
   &__search-box {
     flex: 0 1 rem(400);
+    position: relative;
+
+    input {
+      padding-right: rem(30);
+    }
+
+    .xMark {
+      position: absolute;
+      top: 50%;
+      translate: 0 -50%;
+      right: rem(5);
+    }
   }
 
   &__list {
