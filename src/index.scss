@@ -59,9 +59,11 @@ ol {
     margin-bottom: rem(10);
   }
 
+  padding-left: rem(20);
+
   ul,
   ol {
-    padding-left: rem(15);
+    padding-left: rem(10);
   }
 }
 
@@ -99,7 +101,7 @@ li {
 
   > main {
     flex: 1 1 auto;
-    padding: rem(100) 0 rem(50);
+    padding: rem(75) 0 rem(50);
   }
 }
 
