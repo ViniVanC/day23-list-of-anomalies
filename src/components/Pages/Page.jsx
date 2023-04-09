@@ -31,16 +31,25 @@ export const Page = () => {
 
   return (
     <div>
-      <Link to={"/"} className="back-btn">
-        {"<"}
-      </Link>
-      <h1
+      <div
         style={{
-          marginTop: "20px",
+          display: "flex",
+          alignItems: "center",
+          gap: "20px",
+          marginBottom: "30px",
         }}
       >
-        {pageData[Object.keys(pageData)[0]].value.properties.title}
-      </h1>
+        <Link to={"/"} className="back-btn">
+          {"<"}
+        </Link>
+        <h1
+          style={{
+            margin: "0",
+          }}
+        >
+          {pageData[Object.keys(pageData)[0]].value.properties.title}
+        </h1>
+      </div>
       <NotionRenderer blockMap={pageData} />
     </div>
   );
