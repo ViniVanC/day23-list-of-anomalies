@@ -4,6 +4,7 @@ import { Container } from "./components/Container";
 import { Header } from "./components/Header/Header";
 import { PagesList } from "./components/Pages/PagesList";
 import { Page } from "./components/Pages/Page";
+import { Intro } from "./sctions/Intro/Intro";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <main>
         <Container>
+          <Intro />
           <Routes>
             <Route exact path="/" element={<PagesList />} />
             <Route exact path="/pages/:id" element={<Page />} />
