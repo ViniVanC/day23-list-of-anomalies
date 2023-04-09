@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "../Container";
-import { Logo } from "../Logo";
+import { Logo } from "../Logo/Logo";
 import { List } from "../List/List";
 import "./Header.scss";
 
