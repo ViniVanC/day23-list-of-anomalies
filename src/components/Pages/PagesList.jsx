@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./PagesList.scss";
 
 const databaseId = "4b04583f3eb641f3bf11d32bbf830948";
 
@@ -25,13 +26,13 @@ export const PagesList = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Pages List</h1>
-      <ul>
+    <div className="pages-list">
+      <h1>Список аномалій:</h1>
+      <ul className="pages-list__list">
         {pages?.slice(1).map((page) => (
-          <li key={page.value.id}>
-            <Link to={`/pages/${page.value.id}`}>
-              {page.value.properties.title}
+          <li className="pages-list__item" key={page.value.id}>
+            <Link className="pages-list__link" to={`/pages/${page.value.id}`}>
+              <b>Object #</b> {page.value.properties.title}
             </Link>
           </li>
         ))}
