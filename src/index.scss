@@ -16,6 +16,11 @@
   border-radius: 50px;
 }
 
+::selection {
+  background-color: $pink;
+  color: $black;
+}
+
 * {
   margin: 0;
   padding: 0;
