@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { NotionRenderer } from "react-notion";
+import { Loader } from "../Loader/Loader";
 
 export const Page = () => {
   const { id } = useParams();
@@ -25,7 +26,7 @@ export const Page = () => {
   }, [id]);
 
   if (!pageData) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   return (
