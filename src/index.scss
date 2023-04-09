@@ -144,7 +144,8 @@ input {
   align-items: center;
   justify-content: center;
 
-  font-size: 25px;
+  font-size: rem(25);
+  line-height: 0;
   font-weight: 700;
   color: $pink;
   text-decoration: none;
@@ -159,7 +160,7 @@ input {
   }
 }
 
-.xMark {
+.x-mark {
   background-color: transparent;
   width: rem(20);
   height: rem(20);
