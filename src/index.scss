@@ -78,6 +78,19 @@ li {
   }
 }
 
+input {
+  width: 100%;
+  background-color: $light-pink;
+  color: $black;
+  font-size: rem(18);
+  padding: rem(5) rem(10);
+  outline: none;
+
+  &::placeholder {
+    color: rgba($color: $black, $alpha: 0.7);
+  }
+}
+
 // strong {
 //   color: $pink;
 // }

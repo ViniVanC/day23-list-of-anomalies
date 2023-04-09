@@ -1,4 +1,25 @@
+@import "../../ui-kit";
+
 .pages-list {
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(20);
+    margin-bottom: rem(30);
+
+    h1 {
+      &:not(:last-child) {
+        margin: 0;
+      }
+    }
+  }
+
+  &__search-box {
+    flex: 0 1 rem(400);
+  }
+
   &__list {
     list-style: none;
   }

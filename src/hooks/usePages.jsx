@@ -7,6 +7,7 @@ const pageId = "4b04583f3eb641f3bf11d32bbf830948";
 
 export const PagesProvider = ({ children }) => {
   const [pages, setPages] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     async function fetchPages() {
@@ -26,9 +27,9 @@ export const PagesProvider = ({ children }) => {
     fetchPages();
   }, []);
 
-  console.log(pages);
-
   return (
-    <PagesContext.Provider value={{ pages }}>{children}</PagesContext.Provider>
+    <PagesContext.Provider value={{ pages, search, setSearch }}>
+      {children}
+    </PagesContext.Provider>
   );
 };
