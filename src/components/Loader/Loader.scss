@@ -1,0 +1,32 @@
+.loader {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  .logo {
+    animation: rotate-anim 1s infinite;
+    height: 37px;
+    grid-template-areas:
+      "circle1 circle2"
+      "circle3 circle4";
+    cursor: auto;
+
+    span {
+      &:nth-child(4) {
+        grid-area: circle4;
+      }
+    }
+  }
+}
+
+@keyframes rotate-anim {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
