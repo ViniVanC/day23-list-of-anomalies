@@ -145,7 +145,7 @@ input {
   justify-content: center;
 
   font-size: rem(25);
-  line-height: 0;
+  line-height: 100%;
   font-weight: 700;
   color: $pink;
   text-decoration: none;
@@ -167,19 +167,16 @@ input {
   position: relative;
 
   span {
-    &:nth-child(1),
-    &:nth-child(2) {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      translate: -50% -50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 
-      display: inline-block;
-      height: rem(3);
-      width: 100%;
+    display: inline-block;
+    height: rem(3);
+    width: 100%;
 
-      background-color: $black;
-    }
+    background-color: $black;
 
     &:nth-child(1) {
       rotate: 45deg;
