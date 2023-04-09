@@ -31,7 +31,7 @@ export const Page = () => {
 
   return (
     <div>
-      <h1>{pageData.title}</h1>
+      <h1>{pageData[Object.keys(pageData)[0]].value.properties.title}</h1>
       <NotionRenderer blockMap={pageData} />
     </div>
   );
