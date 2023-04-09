@@ -40,6 +40,37 @@ p {
   }
 }
 
+a {
+  color: $light-pink;
+
+  @media screen and (min-width: $media-screen-sm) {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+ul,
+ol {
+  &:not(:first-child) {
+    margin-top: rem(15);
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+
+  ul,
+  ol {
+    padding-left: rem(15);
+  }
+}
+
+li {
+  &:not(:first-child) {
+    margin-top: rem(10);
+  }
+}
+
 // strong {
 //   color: $pink;
 // }
