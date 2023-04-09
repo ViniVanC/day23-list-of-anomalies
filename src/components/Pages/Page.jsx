@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { NotionRenderer } from "react-notion";
 import { Loader } from "../Loader/Loader";
 
@@ -31,7 +31,16 @@ export const Page = () => {
 
   return (
     <div>
-      <h1>{pageData[Object.keys(pageData)[0]].value.properties.title}</h1>
+      <Link to={"/"} className="back-btn">
+        {"<"}
+      </Link>
+      <h1
+        style={{
+          marginTop: "20px",
+        }}
+      >
+        {pageData[Object.keys(pageData)[0]].value.properties.title}
+      </h1>
       <NotionRenderer blockMap={pageData} />
     </div>
   );
