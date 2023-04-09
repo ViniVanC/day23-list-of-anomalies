@@ -80,34 +80,3 @@ p {
   margin: 0 auto;
   padding: 0 rem(15);
 }
-
-.logo {
-  width: min-content;
-  display: grid;
-  grid-template-areas:
-    "circle1 circle2"
-    "circle3 circle3";
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 3px;
-  grid-column-gap: 7px;
-  justify-items: center;
-  cursor: pointer;
-
-  span {
-    display: inline-block;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background-color: $pink;
-
-    &:nth-child(1) {
-      grid-area: circle1;
-    }
-    &:nth-child(2) {
-      grid-area: circle2;
-    }
-    &:nth-child(3) {
-      grid-area: circle3;
-    }
-  }
-}
