@@ -9,7 +9,7 @@
   width: 100%;
   padding: rem(15) 0;
 
-  background-color: $black;
+  background-color: var(--theme-bg-color);
 
   &__inner {
     display: flex;

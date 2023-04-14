@@ -1,16 +1,16 @@
 $root-font-size: 16;
 
 $white: #b7aea5;
-// $orange: #f77016;
-// $dark-orange: #e33c08;
-// $dark-gray: #433d3d;
 $black: #221d21;
-
-// $white: #a1a6aa;
 $light-pink: #bd928b;
 $pink: #de7571;
 $dark-orange: #f95240;
-// $black: #282634;
+
+:root {
+  --theme-link-color: #bd928b;
+  --theme-bg-color: #221d21;
+  --theme-text-color: #b7aea5;
+}
 
 $media-screen-xs: "479.99px";
 $media-screen-sm: "767.99px";
