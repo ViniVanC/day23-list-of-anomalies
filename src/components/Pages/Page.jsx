@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { NotionRenderer } from "react-notion";
 import { Loader } from "../Loader/Loader";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 
 export const Page = () => {
   const { id } = useParams();
@@ -40,7 +41,7 @@ export const Page = () => {
         }}
       >
         <Link to={"/"} className="back-btn">
-          {"<"}
+          <MdKeyboardArrowLeft />
         </Link>
         <h1
           style={{
